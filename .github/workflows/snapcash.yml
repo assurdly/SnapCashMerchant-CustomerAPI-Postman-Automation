@@ -1,26 +1,18 @@
-name: Snapcash Postman Collection
+name: Snapcash Automated API tests using Postman CLI
 
-on:
-  push:
-    branches:
-      - main  # Change this to your preferred branch
+on: push
 
 jobs:
-  run-postman-collection:
+  automated-api-tests:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v2
-
-    - name: Set up Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: '14'  # Change this to your preferred Node.js version
-
-    - name: Install Newman
-      run: npm install -g newman
-
-    - name: Run Postman Collection
-      run: newman run "Postman Collections"/Snapcash.json  # Replace with your collection file name
+      - uses: actions/checkout@v3
+      - name: Install Postman CLI
+        run: |
+          curl -o- "https://dl-cli.pstmn.io/install/linux64.sh" | sh
+      - name: Login to Postman CLI
+        run: postman login --with-api-key ${{ secrets.POSTMAN_API_KEY }}
+      - name: Run API tests
+        run: |
+          postman collection run "26083026-2c893f52-5ea5-4367-8e31-243feb82a5ff" -e "26083026-cd0fe07c-6881-4e86-b680-7ec7df1a34d8"
 
