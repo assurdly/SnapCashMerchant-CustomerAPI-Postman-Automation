@@ -1,0 +1,1 @@
+{"status":false,"error":"bad_request","message":"Invalid request data","data":{"consent":{"message":"Consent must be [true]","customErrorMessage":"False is not a valid option"}}}
