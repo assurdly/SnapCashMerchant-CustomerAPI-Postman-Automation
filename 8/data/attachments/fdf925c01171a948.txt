@@ -1,0 +1,1 @@
+{"status":false,"error":"bad_request","message":"Invalid request data","data":{"bank_code":{"message":"Bank code length must be 6 characters long","customErrorMessage":"Bank code should only be 6 characters, no less, no more"}}}

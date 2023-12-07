@@ -1,0 +1,1 @@
+{"status":false,"error":"bad_request","message":"Invalid request data","data":{"account_number":{"message":"Account number with value abcde fails to match the required pattern: /^\\d{10}$/","customErrorMessage":"Account number is invalid"}}}

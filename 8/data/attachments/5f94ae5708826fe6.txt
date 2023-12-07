@@ -1,0 +1,1 @@
+{"status":false,"error":"bad_request","message":"Invalid request data","data":{"email":{"message":"Email is not allowed to be empty","customErrorMessage":"Email is invalid"}}}

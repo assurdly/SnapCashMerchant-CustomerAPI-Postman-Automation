@@ -1,0 +1,1 @@
+{"status":false,"error":"bad_request","message":"We're not able to immediately validate your bank account at this time. Please try again in 5 minutes","data":{}}

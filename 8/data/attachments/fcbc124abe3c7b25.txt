@@ -1,0 +1,1 @@
+{"status":false,"error":"bad_request","message":"Invalid request data","data":{"phone_number":{"message":"Phone number with value abcde fails to match the required pattern: /^[0-9+]+$/","customErrorMessage":"Phone number is invalid"}}}
